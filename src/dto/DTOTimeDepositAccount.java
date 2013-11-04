@@ -1,9 +1,6 @@
 package dto;
 
-import entities.Account;
-import entities.Transaction;
 import java.util.Date;
-import java.util.HashMap;
 
 /**
  *

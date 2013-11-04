@@ -6,8 +6,8 @@
 
 package contract;
 
-import entities.Account;
-import entities.Person;
+import dto.DTOAccount;
+import dto.DTOPerson;
 import java.util.ArrayList;
 import java.util.Map;
 import javax.ejb.Remote;
@@ -20,21 +20,21 @@ import javax.ejb.Remote;
 public interface BankInterface {
     public String sayHello(String name);
     
-    public Map<Integer, Person> getPersons();
+    public Map<Integer, DTOPerson> getPersons();
 
-    public Person getPerson(int id);
+    public DTOPerson getPerson(int id);
 
     public ArrayList<String> getRoles();
 
-    public ArrayList<Account> getAccounts();
+    public ArrayList<DTOAccount> getAccounts();
 
-    public ArrayList<Person> getPersonsByRole(String role);
+    public ArrayList<DTOPerson> getPersonsByRole(String role);
 
-    public Account getAccountByAccountnumber(int accountnumber);
+    public DTOAccount getAccountByAccountnumber(int accountnumber);
 
-    public Person getPersonByUserId(String userId);
+    public DTOPerson getPersonByUserId(String userId);
 
-    public Person getPersonByAccountNumber(int accountNumber);
+    public DTOPerson getPersonByAccountNumber(int accountNumber);
 
     public boolean checkLogin(String username, String password);
 
@@ -48,5 +48,5 @@ public interface BankInterface {
     
     public void saveAccount(int userId, String type, double intrest);
     
-    public void savePerson(String role, String password, Person person);
+    public void savePerson(String role, String password, DTOPerson person);
 }
