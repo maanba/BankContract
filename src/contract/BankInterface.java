@@ -20,7 +20,7 @@ import javax.ejb.Remote;
 public interface BankInterface {
     public String sayHello(String name);
     
-        public Map<Integer, Person> getPersons();
+    public Map<Integer, Person> getPersons();
 
     public Person getPerson(int id);
 
