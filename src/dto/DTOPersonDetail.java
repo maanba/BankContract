@@ -8,9 +8,10 @@ import java.util.ArrayList;
 
 /**
  *
- * @author DragønEye
+ * @author Mads
  */
-public class DTOPerson {
+public class DTOPersonDetail {
+
     private int id;
     private String firstName;
     private String lastName;
@@ -19,11 +20,12 @@ public class DTOPerson {
     private int zip;
     private String city;
     private int phonenumber;
+    private ArrayList<DTOAccount> accounts;
 
-    public DTOPerson() {
+    public DTOPersonDetail() {
     }
 
-    public DTOPerson(String firstName, String lastName, String email, String street, int zip, String city, int phonenumber) {
+    public DTOPersonDetail(String firstName, String lastName, String email, String street, int zip, String city, int phonenumber, ArrayList<DTOAccount> accounts) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -31,10 +33,18 @@ public class DTOPerson {
         this.zip = zip;
         this.city = city;
         this.phonenumber = phonenumber;
+        this.accounts = accounts;
     }
 
     // <editor-fold defaultstate="collapsed" desc="Getter & Setter">
-    
+    public ArrayList<DTOAccount> getAccounts() {
+        return accounts;
+    }
+
+    public void setAccounts(ArrayList<DTOAccount> accounts) {
+        this.accounts = accounts;
+    }
+
     public int getId() {
         return id;
     }

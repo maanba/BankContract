@@ -6,8 +6,6 @@ package dto;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  *
@@ -20,7 +18,7 @@ public class DTOAccount {
     protected double interest;
     protected long balance;
     protected Date created;
-    protected ArrayList<DTOTransactionDetail> transactions = new ArrayList<>();
+    protected ArrayList<DTOTransaction> transactions = new ArrayList<>();
 
     public DTOAccount(String accountType, int accountnumber, double interest, long balance, Date created) {
         this.accountType = accountType;
@@ -38,11 +36,11 @@ public class DTOAccount {
         this.accountType = accountType;
     }
 
-    public ArrayList<DTOTransactionDetail> getTransactions() {
+    public ArrayList<DTOTransaction> getTransactions() {
         return transactions;
     }
 
-    public void setTransactions(ArrayList<DTOTransactionDetail> transactions) {
+    public void setTransactions(ArrayList<DTOTransaction> transactions) {
         this.transactions = transactions;
     }
 

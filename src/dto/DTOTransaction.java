@@ -10,7 +10,7 @@ import java.util.Date;
  *
  * @author DragønEye
  */
-public class DTOTransactionDetail {
+public class DTOTransaction {
     private Date date;
     private int transactionNumber;
     private int fromAccount;
@@ -20,7 +20,7 @@ public class DTOTransactionDetail {
     private long fromAmount;
     private String comment;
 
-    public DTOTransactionDetail(Date date, int transactionNumber, int fromAccount, int toAccount, long amount, long toAmount, long fromAmount, String comment) {
+    public DTOTransaction(Date date, int transactionNumber, int fromAccount, int toAccount, long amount, long toAmount, long fromAmount, String comment) {
         this.date = date;
         this.transactionNumber = transactionNumber;
         this.fromAccount = fromAccount;
