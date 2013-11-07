@@ -46,9 +46,6 @@ public class DTOPersonDetail {
         this.users = users;
     }
 
-    
-    
-    
     // <editor-fold defaultstate="collapsed" desc="Getter & Setter">
     public ArrayList<DTOAccount> getAccounts() {
         return accounts;
@@ -120,6 +117,15 @@ public class DTOPersonDetail {
 
     public void setPhonenumber(int phonenumber) {
         this.phonenumber = phonenumber;
+    }
+
+    public DTOUser getRoleByUserId(String username) {
+        for (int i = 0; i < users.size(); i++) {
+            if (username.equals(users.get(i).getUserId())) {
+                return users.get(i);
+            }
+        }
+        return null;
     }
 //</editor-fold>
 }
