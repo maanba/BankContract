@@ -8,6 +8,7 @@ package contract;
 
 import dto.DTOAccount;
 import dto.DTOPerson;
+import dto.DTOPersonDetail;
 import java.util.ArrayList;
 import java.util.Map;
 import javax.ejb.Remote;
@@ -23,6 +24,9 @@ public interface BankInterface {
     public Map<Integer, DTOPerson> getPersons();
 
     public DTOPerson getPerson(int id);
+    
+    public DTOPersonDetail getPersonDetail(int id);
+    
 
     public ArrayList<String> getRoles();
 
@@ -32,7 +36,7 @@ public interface BankInterface {
 
     public DTOAccount getAccountByAccountnumber(int accountnumber);
 
-    public DTOPerson getPersonByUserId(String userId);
+    public DTOPersonDetail getPersonByUserId(String userId);
 
     public DTOPerson getPersonByAccountNumber(int accountNumber);
 
