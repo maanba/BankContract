@@ -26,7 +26,6 @@ public interface BankInterface {
     public DTOPerson getPerson(int id);
     
     public DTOPersonDetail getPersonDetail(int id);
-    
 
     public ArrayList<String> getRoles();
 
