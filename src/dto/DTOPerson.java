@@ -19,13 +19,12 @@ public class DTOPerson {
     private int zip;
     private String city;
     private int phonenumber;
-    private ArrayList<DTOAccountDetail> accounts;
+    private ArrayList<DTOAccount> accounts;
 
     public DTOPerson() {
     }
 
-    public DTOPerson(int id, String firstName, String lastName, String email, String street, int zip, String city, int phonenumber, ArrayList<DTOAccountDetail> accounts) {
-        this.id = id;
+    public DTOPerson(String firstName, String lastName, String email, String street, int zip, String city, int phonenumber, ArrayList<DTOAccount> accounts) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -36,12 +35,16 @@ public class DTOPerson {
         this.accounts = accounts;
     }
 
-
-// <editor-fold defaultstate="collapsed" desc="Getter & Setter">    
-
-    public ArrayList<DTOAccountDetail> getAccounts() {
+    // <editor-fold defaultstate="collapsed" desc="Getter & Setter">
+    public ArrayList<DTOAccount> getAccounts() {
         return accounts;
     }
+
+    public void setAccounts(ArrayList<DTOAccount> accounts) {
+        this.accounts = accounts;
+    }
+
+
     
     public int getId() {
         return id;

@@ -16,11 +16,11 @@ import java.util.Map;
 public class DTOAccount {
 
     protected String accountType;
-    protected Map<Integer, DTOTransactionDetail> transactions = new HashMap<>();
     protected int accountnumber;
     protected double interest;
     protected long balance;
     protected Date created;
+    protected ArrayList<DTOTransactionDetail> transactions = new ArrayList<>();
 
     public DTOAccount(String accountType, int accountnumber, double interest, long balance, Date created) {
         this.accountType = accountType;
@@ -38,11 +38,11 @@ public class DTOAccount {
         this.accountType = accountType;
     }
 
-    public Map<Integer, DTOTransactionDetail> getTransactions() {
+    public ArrayList<DTOTransactionDetail> getTransactions() {
         return transactions;
     }
 
-    public void setTransactions(Map<Integer, DTOTransactionDetail> transactions) {
+    public void setTransactions(ArrayList<DTOTransactionDetail> transactions) {
         this.transactions = transactions;
     }
 
