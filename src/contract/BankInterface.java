@@ -10,7 +10,6 @@ import dto.DTOAccount;
 import dto.DTOPerson;
 import dto.DTOPersonDetail;
 import java.util.ArrayList;
-import java.util.Map;
 import javax.ejb.Remote;
 
 /**
