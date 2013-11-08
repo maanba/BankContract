@@ -13,21 +13,17 @@ import java.util.Date;
 public class DTOTransaction {
     private Date date;
     private int transactionNumber;
-    private int fromAccount;
-    private int toAccount;
+    private DTOAccount fromAccount;
+    private DTOAccount toAccount;
     private long amount;
-    private long toAmount;
-    private long fromAmount;
     private String comment;
 
-    public DTOTransaction(Date date, int transactionNumber, int fromAccount, int toAccount, long amount, long toAmount, long fromAmount, String comment) {
+    public DTOTransaction(Date date, int transactionNumber, DTOAccount fromAccount, DTOAccount toAccount, long amount, String comment) {
         this.date = date;
         this.transactionNumber = transactionNumber;
         this.fromAccount = fromAccount;
         this.toAccount = toAccount;
         this.amount = amount;
-        this.toAmount = toAmount;
-        this.fromAmount = fromAmount;
         this.comment = comment;
     }
     
@@ -47,19 +43,19 @@ public class DTOTransaction {
         this.transactionNumber = transactionNumber;
     }
 
-    public int getFromAccount() {
+    public DTOAccount getFromAccount() {
         return fromAccount;
     }
 
-    public void setFromAccount(int fromAccount) {
+    public void setFromAccount(DTOAccount fromAccount) {
         this.fromAccount = fromAccount;
     }
 
-    public int getToAccount() {
+    public DTOAccount getToAccount() {
         return toAccount;
     }
 
-    public void setToAccount(int toAccount) {
+    public void setToAccount(DTOAccount toAccount) {
         this.toAccount = toAccount;
     }
 
@@ -69,22 +65,6 @@ public class DTOTransaction {
 
     public void setAmount(long amount) {
         this.amount = amount;
-    }
-
-    public long getToAmount() {
-        return toAmount;
-    }
-
-    public void setToAmount(long toAmount) {
-        this.toAmount = toAmount;
-    }
-
-    public long getFromAmount() {
-        return fromAmount;
-    }
-
-    public void setFromAmount(long fromAmount) {
-        this.fromAmount = fromAmount;
     }
 
     public String getComment() {
