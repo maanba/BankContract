@@ -8,6 +8,7 @@ import java.util.Date;
  * @author Mads
  */
 public class DTOTimeDepositAccount extends DTOAccount implements Serializable {
+private static final long serialVersionUID = 323124912051L;
 
     private Date lockPeriodStart;
     private Date lockPeriodEnd;

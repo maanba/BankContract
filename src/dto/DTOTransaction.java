@@ -11,7 +11,9 @@ import java.util.Date;
  *
  * @author DragønEye
  */
-public class DTOTransaction implements Serializable{
+
+public class DTOTransaction implements Serializable {
+    private static final long serialVersionUID = 753210310347L;
     private Date date;
     private int transactionNumber;
     private DTOAccount fromAccount;

@@ -5,13 +5,15 @@
 package dto;
 
 import java.io.Serializable;
-import java.util.ArrayList;
+
 
 /**
  *
  * @author DragønEye
  */
-public class DTOPerson implements Serializable{
+public class DTOPerson implements Serializable {
+    private static final long serialVersionUID = 523567295647L;
+
     private int id;
     private String firstName;
     private String lastName;

@@ -12,7 +12,8 @@ import java.util.Date;
  *
  * @author DragønEye
  */
-public class DTOAccount implements Serializable{
+public class DTOAccount implements Serializable {
+    private static final long serialVersionUID = 75264722956223L;
 
     protected String accountType;
     protected int accountnumber;

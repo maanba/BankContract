@@ -11,7 +11,10 @@ import java.io.Serializable;
  *
  * @author Thomas
  */
-public class DTOTransactionDetail implements Serializable{
+
+public class DTOTransactionDetail implements Serializable {
+    private static final long serialVersionUID = 4913212905L;
+
 
     public DTOTransactionDetail(int transactionNumber, long amount, String comment) {
         this.transactionNumber = transactionNumber;
