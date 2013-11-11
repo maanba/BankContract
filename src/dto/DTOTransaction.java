@@ -10,10 +10,16 @@ import java.util.Date;
 /**
  *
  * @author DragønEye
+ * @param date date
+ * @param transactionNumber transaction number
+ * @param fromAccount fromAccount
+ * @param toAccount toAccount
+ * @param amount amount
+ * @param comment comment
  */
 
 public class DTOTransaction implements Serializable {
-    private static final long serialVersionUID = 753210310347L;
+    private static final long serialVersionUID = 753210310317L;
     private Date date;
     private int transactionNumber;
     private DTOAccount fromAccount;
