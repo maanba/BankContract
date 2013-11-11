@@ -17,7 +17,7 @@ public class DTOMoneyMarketAccount extends DTOAccount implements Serializable {
     private static final long serialVersionUID = 7526472295647L;
     private double minimumBalance;
 
-    public DTOMoneyMarketAccount(double minimumBalance, String accountType, int accountnumber, double interest, long balance, Date created) {
+    public DTOMoneyMarketAccount(double minimumBalance, String accountType, int accountnumber, double interest, double balance, Date created) {
         super(accountType, accountnumber, interest, balance, created);
         this.minimumBalance = minimumBalance;
     }

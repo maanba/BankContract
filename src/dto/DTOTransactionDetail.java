@@ -16,21 +16,21 @@ public class DTOTransactionDetail implements Serializable {
     private static final long serialVersionUID = 4913212905L;
 
 
-    public DTOTransactionDetail(int transactionNumber, long amount, String comment) {
+    public DTOTransactionDetail(int transactionNumber, double amount, String comment) {
         this.transactionNumber = transactionNumber;
         this.amount = amount;
         this.comment = comment;
     }
 
     private int transactionNumber;
-    private long amount;
+    private double amount;
     private String comment;
 
-    public long getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(long amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 

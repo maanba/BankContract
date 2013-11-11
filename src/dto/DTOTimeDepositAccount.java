@@ -15,7 +15,7 @@ private static final long serialVersionUID = 323124912051L;
     private boolean locked;
     private long penalty;
 
-    public DTOTimeDepositAccount(Date lockPeriodStart, Date lockPeriodEnd, boolean locked, long penalty, String accountType, int accountnumber, double interest, long balance, Date created) {
+    public DTOTimeDepositAccount(Date lockPeriodStart, Date lockPeriodEnd, boolean locked, long penalty, String accountType, int accountnumber, double interest, double balance, Date created) {
         super(accountType, accountnumber, interest, balance, created);
         this.lockPeriodStart = lockPeriodStart;
         this.lockPeriodEnd = lockPeriodEnd;

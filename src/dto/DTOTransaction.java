@@ -24,10 +24,10 @@ public class DTOTransaction implements Serializable {
     private int transactionNumber;
     private DTOAccount fromAccount;
     private DTOAccount toAccount;
-    private long amount;
+    private double amount;
     private String comment;
 
-    public DTOTransaction(Date date, int transactionNumber, DTOAccount fromAccount, DTOAccount toAccount, long amount, String comment) {
+    public DTOTransaction(Date date, int transactionNumber, DTOAccount fromAccount, DTOAccount toAccount, double amount, String comment) {
         this.date = date;
         this.transactionNumber = transactionNumber;
         this.fromAccount = fromAccount;
@@ -68,11 +68,11 @@ public class DTOTransaction implements Serializable {
         this.toAccount = toAccount;
     }
 
-    public long getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(long amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
 

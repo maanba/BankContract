@@ -18,11 +18,11 @@ public class DTOAccount implements Serializable {
     protected String accountType;
     protected int accountnumber;
     protected double interest;
-    protected long balance;
+    protected double balance;
     protected Date created;
     protected ArrayList<DTOTransaction> transactions = new ArrayList<>();
 
-    public DTOAccount(String accountType, int accountnumber, double interest, long balance, Date created) {
+    public DTOAccount(String accountType, int accountnumber, double interest, double balance, Date created) {
         this.accountType = accountType;
         this.accountnumber = accountnumber;
         this.interest = interest;
@@ -62,7 +62,7 @@ public class DTOAccount implements Serializable {
         this.interest = interest;
     }
 
-    public long getBalance() {
+    public double getBalance() {
         return balance;
     }
 
