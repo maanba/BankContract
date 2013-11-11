@@ -10,7 +10,6 @@ import dto.DTOAccount;
 import dto.DTOPerson;
 import dto.DTOPersonDetail;
 import java.util.ArrayList;
-import java.util.Map;
 import javax.ejb.Remote;
 
 /**
@@ -40,8 +39,6 @@ public interface BankInterface {
     public boolean checkLogin(String username, String password);
 
     public void saveTransaction(int fromAccountNumber, int toAccountNumber, long amount, String comment);
-
-    public void savePhysicalTransaction(int AccountNumber, long amount, String comment);
 
     public int getNextPersonId();
 
