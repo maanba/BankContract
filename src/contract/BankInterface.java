@@ -40,8 +40,6 @@ public interface BankInterface {
 
     public void saveTransaction(int fromAccountNumber, int toAccountNumber, long amount, String comment);
 
-    public void savePhysicalTransaction(int AccountNumber, long amount, String comment);
-
     public int getNextPersonId();
 
     public ArrayList<String> getAccountTypes();
