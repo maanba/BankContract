@@ -4,13 +4,14 @@
  */
 package dto;
 
-import java.util.ArrayList;
+import java.io.Serializable;
 
 /**
  *
  * @author DragønEye
  */
-public class DTOPerson {
+public class DTOPerson implements Serializable {
+    private static final long serialVersionUID = 523567295647L;
     private int id;
     private String firstName;
     private String lastName;

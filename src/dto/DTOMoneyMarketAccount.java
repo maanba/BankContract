@@ -4,6 +4,7 @@
  */
 package dto;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
@@ -12,8 +13,8 @@ import java.util.Date;
  * Bliver måske implementeret. 
  * @author Mads
  */
-public class DTOMoneyMarketAccount extends DTOAccount {
-
+public class DTOMoneyMarketAccount extends DTOAccount implements Serializable {
+    private static final long serialVersionUID = 7526472295647L;
     private double minimumBalance;
 
     public DTOMoneyMarketAccount(double minimumBalance, String accountType, int accountnumber, double interest, long balance, Date created) {

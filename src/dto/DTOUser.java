@@ -4,11 +4,15 @@
  */
 package dto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Mads
  */
-public class DTOUser {
+public class DTOUser implements Serializable {
+
+    private static final long serialVersionUID = 75264722954213L;
     private String userId;
     private String password;
     private String title;
@@ -45,6 +49,4 @@ public class DTOUser {
     public void setTitle(String title) {
         this.title = title;
     }
-    
-    
 }

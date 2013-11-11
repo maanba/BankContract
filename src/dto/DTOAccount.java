@@ -4,6 +4,7 @@
  */
 package dto;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -11,7 +12,8 @@ import java.util.Date;
  *
  * @author DragønEye
  */
-public class DTOAccount {
+public class DTOAccount implements Serializable {
+    private static final long serialVersionUID = 75264722956223L;
 
     protected String accountType;
     protected int accountnumber;
