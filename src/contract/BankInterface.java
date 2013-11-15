@@ -44,7 +44,7 @@ public interface BankInterface {
 
     public ArrayList<String> getAccountTypes();
     
-    public void saveAccount(int userId, String type, double intrest);
+    public void saveAccount(int userId, int accountnumber, String type, double intrest);
     
     public void savePerson(String role, String password, DTOPerson person);
 }
