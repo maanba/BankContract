@@ -46,5 +46,5 @@ public interface BankInterface {
     
     public void saveAccount(int userId, int accountnumber, String type, double intrest);
     
-    public void savePerson(String role, String password, DTOPerson person);
+    public void savePerson(String username, String role, String password, DTOPerson person);
 }
