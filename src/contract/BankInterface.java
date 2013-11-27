@@ -9,6 +9,7 @@ package contract;
 import dto.DTOAccount;
 import dto.DTOPerson;
 import dto.DTOPersonDetail;
+import exceptions.CustomException;
 import java.util.ArrayList;
 import javax.ejb.Remote;
 
@@ -38,7 +39,7 @@ public interface BankInterface {
 
     public boolean checkLogin(String username, String password);
 
-    public void saveTransaction(int fromAccountNumber, int toAccountNumber, long amount, String comment);
+    public void saveTransaction(int fromAccountNumber, int toAccountNumber, long amount, String comment) throws CustomException;
 
     public int getNextPersonId();
 
