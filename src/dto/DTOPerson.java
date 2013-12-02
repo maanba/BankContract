@@ -5,12 +5,14 @@
 package dto;
 
 import java.io.Serializable;
+import javax.xml.bind.annotation.XmlRootElement;
 
 
 /**
  *
  * @author DragønEye
  */
+@XmlRootElement
 public class DTOPerson implements Serializable {
     private static final long serialVersionUID = 523567295647L;
 
